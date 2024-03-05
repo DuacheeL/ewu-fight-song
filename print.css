@@ -1,0 +1,20 @@
+@media print {
+
+ /* Hide */
+    audio {
+        display:none;
+    }
+
+ /* Show Links */
+
+/* Print links */
+    a[href]::after {
+        content: " " attr(href)
+    }
+
+}
+
+/* Paper sizing */
+@page {
+    margin: 1in;
+}
